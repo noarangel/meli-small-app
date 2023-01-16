@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/meli_yellow">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/producResultToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_0"
+        android:layout_margin="@dimen/product_detail_toolbar_margin"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/productDetailBackButton"
+            android:layout_width="@dimen/product_detail_icon_size"
+            android:layout_height="@dimen/product_detail_icon_size"
+            android:layout_marginTop="@dimen/product_detail_icon_margin_top"
+            android:layout_marginEnd="@dimen/product_detail_icon_margin_end"
+            android:background="@drawable/back_button_rounded_background"
+            android:contentDescription="@string/product_detail_back_button_description"
+            android:elevation="@dimen/product_detail_icon_elevation"
+            android:padding="@dimen/product_detail_icon_padding"
+            android:src="@drawable/ic_back_arrow" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_0"
+        android:layout_marginTop="@dimen/product_detail_background_margin_top"
+        android:background="@drawable/product_detail_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/producResultToolbar" />
+
+    <include
+        layout="@layout/product_detail_layout"
+        android:layout_width="@dimen/default_0"
+        android:layout_height="@dimen/default_0"
+        android:layout_margin="@dimen/product_detail_card_widget_margin"
+        android:elevation="@dimen/product_detail_card_include_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/producResultToolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

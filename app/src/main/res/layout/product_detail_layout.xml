@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/productSearchResultItemCardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/product_detail_card_margin"
+    app:barrierMargin="@dimen/product_detail_card_barrier_margin"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/product_detail_card_radius"
+    app:cardElevation="@dimen/product_detail_card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/product_detail_card_constrain_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/productDetailCarouselCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/product_detail_card_carousel_count_margin"
+            android:background="@drawable/carousel_navigation_background"
+            android:elevation="@dimen/product_detail_card_carousel_count_elevation"
+            android:text="@string/product_detail_carousel_count_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/product_detail_card_carousel_count_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/productDetailCarousel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/product_detail_card_carousel_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/product_detail_card_constrain_margin_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productDetailCarousel">
+
+            <TextView
+                android:id="@+id/productListItemTitleTextview"
+                android:layout_width="@dimen/default_0"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/product_detail_card_title_margin"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/product_detail_card_title_size"
+                app:layout_constraintEnd_toStartOf="@+id/productListItemAmountTextView"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/productListItemAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/product_detail_card_amount_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RatingBar
+                android:id="@+id/ratingBar2"
+                style="@android:style/Widget.Holo.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/product_detail_card_rating_bar_margin"
+                android:numStars="5"
+                android:rating="4.5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/productListItemTitleTextview" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_0"
+            android:layout_marginLeft="@dimen/product_detail_card_constrain_margin_horizontal"
+            android:layout_marginRight="@dimen/product_detail_card_constrain_margin_horizontal"
+            android:layout_marginBottom="@dimen/product_detail_card_constrain_margin_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/productDetailDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:padding="@dimen/product_detail_card_description_padding"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/product_detail_card_description_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

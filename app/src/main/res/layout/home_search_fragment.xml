@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/meli_yellow">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/searchHomeBackButton"
+            android:layout_width="@dimen/home_search_image_size"
+            android:layout_height="@dimen/home_search_image_size"
+            android:layout_marginTop="@dimen/home_search_image_margin_top"
+            android:background="@drawable/back_button_rounded_background"
+            android:elevation="@dimen/home_search_image_elevation"
+            android:padding="@dimen/home_search_image_padding"
+            android:src="@drawable/ic_back_arrow" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/homeSearchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/home_search_title_margin_bottom"
+        android:fontFamily="@font/roboto_slab_regular"
+        android:paddingHorizontal="@dimen/home_search_title_padding_horizontal"
+        android:paddingTop="@dimen/home_search_title_padding_top"
+        android:text="@string/home_search_title"
+        android:textAlignment="textStart"
+        android:textColor="@color/meli_blue"
+        android:textSize="@dimen/home_search_title_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/homeSearchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/homeSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/home_search_view_margin_left"
+        android:background="@drawable/search_rounded_background"
+        android:clickable="true"
+        android:elevation="@dimen/home_search_view_elevation"
+        android:focusable="true"
+        android:iconifiedByDefault="false"
+        android:inputType="textAutoComplete"
+        android:searchHintIcon="@drawable/search_rounded_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="@string/home_search_hint"
+        app:searchIcon="@drawable/ic_search_dark" />
+
+    <TextView
+        android:id="@+id/homeSearchSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allan_regular"
+        android:minLines="1"
+        android:paddingHorizontal="@dimen/home_search_subtitle_padding_horizontal"
+        android:paddingBottom="@dimen/home_search_subtitle_padding_bottom"
+        android:text="@string/home_search_subtitle"
+        android:textAlignment="textEnd"
+        android:textColor="@color/meli_blue"
+        android:textSize="@dimen/home_search_subtitle_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeSearchView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

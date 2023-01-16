@@ -1,0 +1,34 @@
+<resources>
+    <!-- home_fragment strings-->
+    <string name="app_name">Small Meli App</string>
+    <string name="home_title">Selecciona tu ciudad</string>
+
+    <!-- home_list_item_layout strings-->
+    <string name="default_country">Colombia</string>
+
+    <!-- home_loading_fragment strings-->
+    <string name="loading_elevation">Colombia</string>
+
+    <!-- home_search_fragment string -->
+    <string name="home_search_title">Busca Productos</string>
+    <string name="home_search_hint">Ingresa tu busqueda</string>
+    <string name="home_search_subtitle">marcas y más…</string>
+
+    <!-- product_detail_fragment string -->
+    <string name="product_detail_back_button_description">Flecha de regreso</string>
+
+    <!-- product_detail_layout string -->
+    <string name="product_detail_carousel_count_text">%1$s/%2$s</string>
+
+    <!-- product_list_item_layout string -->
+    <string name="product_list_item_free_shipping_label">Envio gratis</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <!-- exception strings -->
+    <string name="default_error">Houston tenemos un problema!, por favor intentalo de nuevo màs tarde, ocomunicate con nosotros</string>
+    <string name="default_empty_error">Ups, no tenemos información sobre esta busqueda, intentalo de nuevo</string>
+
+</resources>

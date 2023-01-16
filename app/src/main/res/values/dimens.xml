@@ -1,0 +1,108 @@
+<resources>
+
+    <dimen name="default_0">0sp</dimen>
+
+    <!-- home_fragment dimens -->
+    <dimen name="home_radius_corner">40sp</dimen>
+    <dimen name="home_background_size">270sp</dimen>
+    <dimen name="product_list_radius_corner">45sp</dimen>
+    <dimen name="home_title_padding_horizontal">25sp</dimen>
+    <dimen name="home_title_padding_top">30sp</dimen>
+    <dimen name="home_title_text_size">50sp</dimen>
+    <dimen name="home_sites_margin">15sp</dimen>
+
+    <!-- home_list_item_layout dimens -->
+    <dimen name="home_list_site_item_margin">10sp</dimen>
+    <dimen name="home_list_site_item_padding">2sp</dimen>
+    <dimen name="home_list_site_item_radius">20sp</dimen>
+    <dimen name="home_list_site_item_elevation">3sp</dimen>
+    <dimen name="home_list_site_item_linear_layout_padding">16sp</dimen>
+    <dimen name="home_list_site_item_image_size">50sp</dimen>
+    <dimen name="home_list_site_item_image_margin_horizontal">12sp</dimen>
+    <dimen name="home_list_site_item_text_size">20sp</dimen>
+
+    <!-- home_loading_fragment dimens -->
+    <dimen name="home_loading_elevation">10sp</dimen>
+
+    <!-- home_search_fragment dimens -->
+    <dimen name="home_search_image_size">40sp</dimen>
+    <dimen name="home_search_image_margin_top">10sp</dimen>
+    <dimen name="home_search_image_padding">13sp</dimen>
+    <dimen name="home_search_image_elevation">6sp</dimen>
+    <dimen name="home_search_title_margin_bottom">15sp</dimen>
+    <dimen name="home_search_title_padding_horizontal">10sp</dimen>
+    <dimen name="home_search_title_padding_top">30sp</dimen>
+    <dimen name="home_search_title_size">45sp</dimen>
+    <dimen name="home_search_view_margin_left">40sp</dimen>
+    <dimen name="home_search_view_elevation">6sp</dimen>
+    <dimen name="home_search_subtitle_padding_horizontal">30sp</dimen>
+    <dimen name="home_search_subtitle_padding_bottom">30sp</dimen>
+    <dimen name="home_search_subtitle_size">60sp</dimen>
+
+    <!-- product_detail_fragment dimens -->
+    <dimen name="product_detail_toolbar_margin">10sp</dimen>
+    <dimen name="product_detail_icon_size">40sp</dimen>
+    <dimen name="product_detail_icon_margin_top">10sp</dimen>
+    <dimen name="product_detail_icon_margin_end">20sp</dimen>
+    <dimen name="product_detail_icon_padding">13sp</dimen>
+    <dimen name="product_detail_icon_elevation">4sp</dimen>
+    <dimen name="product_detail_background_margin_top">200sp</dimen>
+    <dimen name="product_detail_card_widget_margin">20dp</dimen>
+    <dimen name="product_detail_card_include_elevation">5sp</dimen>
+
+    <!-- product_detail_layout dimens -->
+    <dimen name="product_detail_card_margin">30sp</dimen>
+    <dimen name="product_detail_card_barrier_margin">20sp</dimen>
+    <dimen name="product_detail_card_elevation">3sp</dimen>
+    <dimen name="product_detail_card_radius">20sp</dimen>
+    <dimen name="product_detail_card_constrain_margin">5sp</dimen>
+    <dimen name="product_detail_card_carousel_count_elevation">1sp</dimen>
+    <dimen name="product_detail_card_carousel_count_text_size">12sp</dimen>
+    <dimen name="product_detail_card_carousel_count_margin">10sp</dimen>
+    <dimen name="product_detail_card_carousel_height">200sp</dimen>
+    <dimen name="product_detail_card_constrain_margin_horizontal">10sp</dimen>
+    <dimen name="product_detail_card_title_margin">10sp</dimen>
+    <dimen name="product_detail_card_title_size">14sp</dimen>
+    <dimen name="product_detail_card_amount_size">18sp</dimen>
+    <dimen name="product_detail_card_rating_bar_margin">10sp</dimen>
+    <dimen name="product_detail_card_constrain_margin_bottom">10sp</dimen>
+    <dimen name="product_detail_card_description_padding">10sp</dimen>
+    <dimen name="product_detail_card_description_size">12sp</dimen>
+
+    <!-- product_detail_picture_layout dimens -->
+    <dimen name="product_detail_picture_image_padding">10sp</dimen>
+
+    <!-- product_list_item_layout dimens -->
+    <dimen name="product_list_item_card_margin">10sp</dimen>
+    <dimen name="product_list_item_card_padding">2sp</dimen>
+    <dimen name="product_list_item_card_radius">20sp</dimen>
+    <dimen name="product_list_item_card_elevation">3sp</dimen>
+    <dimen name="product_list_item_linear_padding">5sp</dimen>
+    <dimen name="product_list_item_thumbnail_size">100dp</dimen>
+    <dimen name="product_list_item_thumbnail_padding">2dp</dimen>
+    <dimen name="product_list_item_linear_margin_left">5sp</dimen>
+    <dimen name="product_list_item_title_margin_end">5sp</dimen>
+    <dimen name="product_list_item_title_size">14sp</dimen>
+    <dimen name="product_list_item_amount_margin_top">2sp</dimen>
+    <dimen name="product_list_item_amount_margin_end">5sp</dimen>
+    <dimen name="product_list_item_amount_size">18sp</dimen>
+    <dimen name="product_list_item_free_shipping_margin_horizontal">2sp</dimen>
+    <dimen name="product_list_item_free_shipping_margin_top">3sp</dimen>
+    <dimen name="product_list_item_free_shipping_elevation">3sp</dimen>
+    <dimen name="product_list_item_free_shipping_padding">3sp</dimen>
+    <dimen name="product_list_item_free_shipping_text_size">11sp</dimen>
+
+    <!-- product_search_result_fragment dimens -->
+    <dimen name="product_search_result_margin_top">20sp</dimen>
+    <dimen name="product_search_result_toolbar_margin">10sp</dimen>
+    <dimen name="product_search_result_toolbar_back_size">40sp</dimen>
+    <dimen name="product_search_result_toolbar_back_margin_top">10sp</dimen>
+    <dimen name="product_search_result_toolbar_back_margin_end">20sp</dimen>
+    <dimen name="product_search_result_toolbar_back_elevation">4sp</dimen>
+    <dimen name="product_search_result_toolbar_back_padding">13sp</dimen>
+    <dimen name="product_search_result_title_margin_top">10sp</dimen>
+    <dimen name="product_search_result_title_margin_end">10sp</dimen>
+    <dimen name="product_search_result_title_size">25sp</dimen>
+    <dimen name="product_search_result_list_margin">20sp</dimen>
+
+</resources>

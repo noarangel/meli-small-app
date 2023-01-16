@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/productSearchResultItemCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/product_list_item_card_margin"
+    android:padding="@dimen/product_list_item_card_padding"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/product_list_item_card_radius"
+    app:cardElevation="@dimen/product_list_item_card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/product_list_item_linear_padding">
+
+        <ImageView
+            android:id="@+id/productItemThumbnailImageView"
+            android:layout_width="@dimen/product_list_item_thumbnail_size"
+            android:layout_height="@dimen/product_list_item_thumbnail_size"
+            android:padding="@dimen/product_list_item_thumbnail_padding" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/product_list_item_linear_margin_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/productListItemTitleTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/product_list_item_title_margin_end"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/product_list_item_title_size" />
+
+            <TextView
+                android:id="@+id/productListItemAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/product_list_item_amount_margin_top"
+                android:layout_marginEnd="@dimen/product_list_item_amount_margin_end"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/product_list_item_amount_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start">
+
+                <TextView
+                    android:id="@+id/freeShippingProductLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/product_list_item_free_shipping_margin_horizontal"
+                    android:layout_marginTop="@dimen/product_list_item_free_shipping_margin_top"
+                    android:background="@drawable/label_free_shipping_background"
+                    android:elevation="@dimen/product_list_item_free_shipping_elevation"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:padding="@dimen/product_list_item_free_shipping_padding"
+                    android:text="@string/product_list_item_free_shipping_label"
+                    android:textAlignment="center"
+                    android:textColor="@color/meli_labels_text_free_shipping"
+                    android:textSize="@dimen/product_list_item_free_shipping_text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
