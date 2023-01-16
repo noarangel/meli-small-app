@@ -13,8 +13,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/product_detail_card_constrain_margin"
-        android:orientation="vertical">
+        android:layout_margin="@dimen/product_detail_card_constrain_margin">
 
         <TextView
             android:id="@+id/productDetailCarouselCount"
@@ -90,7 +89,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/default_0"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/product_detail_card_constrain_margin_horizontal"
             android:layout_marginRight="@dimen/product_detail_card_constrain_margin_horizontal"
             android:layout_marginBottom="@dimen/product_detail_card_constrain_margin_bottom"
@@ -100,26 +99,27 @@
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
             <ScrollView
-                android:id="@+id/scrollView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
                     android:id="@+id/productDetailDescription"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:padding="@dimen/product_detail_card_description_padding"
                     android:textColor="@color/black"
                     android:textSize="@dimen/product_detail_card_description_size"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </ScrollView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
