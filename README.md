@@ -326,9 +326,6 @@ data class NameOfFuncionalityModel(
         }
        <!-- implement methods of viewmodel -->
 ````
-### Thanks to
-
-To my partner, my daughter and our close friends
 
 
 
